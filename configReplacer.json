@@ -1,0 +1,19 @@
+{
+  "mainGaussBoxPath": "/Users/gauss/Desktop/MojiProjekti/dbSwitchGaussBox/mainGaussBox",
+  "apiName": "smartDocumentApi",
+  "testPath": "/Users/gauss/Desktop/MojiProjekti/coding starters/adonis/filesToCopy",
+  "replacementParams": {
+    "$apiNameWithoutSuffix$": "smartDocument",
+    "$apiNameWithSuffix$": "smartDocumentApi",
+    "$entityGroupCamelCase$": "accounting",
+    "$entityGroupPascalCase$": "Accounting",
+    "$entityCamelCase$": "amortisationLogAsset",
+    "$entitySnakeCase$": "amortisation_log_asset",
+    "$entityPascalCase$": "AmortisationLogAsset",
+    "$entityPascalCasePlural$": "AmortisationLogAssets",
+    "$entityLowerCaseSpaceSeparated$": "amortisation log asset",
+    "$entityLowerCaseSpaceSeparatedPlural$": "amortisation log assets",
+    "$entityPascalCaseList$": "",
+    "$tableName$": "document_amortisation_log_assets"
+  }
+}

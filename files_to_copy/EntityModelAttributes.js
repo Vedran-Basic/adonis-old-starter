@@ -1,0 +1,145 @@
+module.exports = [
+    {
+        name: 'id',
+        addToResponse: true,
+        userWritable: false,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'number',
+        sanitizeRule: '',
+        required: false,
+        listConfig: {
+            mandatory: true,
+            name: 'entityId',
+            type: 'number'
+        }
+    },
+    {
+        name: 'created_at',
+        isTimestamp: true,
+        addToResponse: true,
+        userWritable: false,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'date',
+        sanitizeRule: 'to_date',
+        required: false
+    },
+    {
+        name: 'updated_at',
+        addToResponse: true,
+        userWritable: false,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'date',
+        sanitizeRule: 'to_date',
+        required: false
+    },
+    {
+        name: 'created_by_id',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: false,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'number',
+        sanitizeRule: '',
+        required: false
+    },
+    {
+        name: 'booleanExample',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'boolean',
+        sanitizeRule: '',
+        required: false
+    },
+    {
+        name: 'archived',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'boolean',
+        sanitizeRule: '',
+        required: false,
+        listConfig: {
+            mandatory: true,
+            name: 'isArchived',
+            type: 'boolean'
+        }
+    },
+    {
+        name: 'apiKey',
+        addToResponse: true,
+        userWritable: false,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'number',
+        sanitizeRule: '',
+        required: true
+    },
+    {
+        name: 'description',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: true,
+        canFilterBy: false,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'string',
+        sanitizeRule: '',
+        required: false
+    },
+    {
+        name: 'title',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: true,
+        isJSON: false,
+        validateRule: 'string',
+        sanitizeRule: '',
+        required: true
+    },
+    {
+        name: 'typeEnum',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'string|in:ebom,mbom,sbom,sales,recepie',
+        sanitizeRule: '',
+        required: false,
+    },
+    {
+        name: 'cover_image',
+        addToResponse: true,
+        userWritable: true,
+        canSortBy: true,
+        canFilterBy: true,
+        canSearchBy: false,
+        isJSON: false,
+        validateRule: 'string',
+        sanitizeRule: '',
+        required: false
+    }
+];
